@@ -59,6 +59,7 @@ const MiddleSection = () => {
         textColor = "text-white"
         borderColor = "#013D29"
         textSize = "text-sm"
+        mx="20"
         padding = "px-4 py-2"
         borderRadius = "rounded-full"
         onClick={""} 

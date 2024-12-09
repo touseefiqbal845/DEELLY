@@ -7,7 +7,8 @@ const CustomButton = ({
   borderColor = "#013D29", 
   textSize = "text-lg", 
   padding = "px-4 py-2", 
-  borderRadius = "rounded-full", 
+  borderRadius = "rounded-full",
+  mx="", 
   onClick, 
 }) => {
   return (
@@ -19,7 +20,7 @@ const CustomButton = ({
         ${textSize} 
         ${padding} 
         ${borderRadius} 
-        mx-20 
+        mx-${mx} 
         active:bg-white 
         active:text-${bgColor.slice(1)} 
         border 

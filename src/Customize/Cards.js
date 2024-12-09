@@ -1,5 +1,6 @@
 import React from "react";
 import Rating from "react-rating";
+import CustomButton from "./Button";
 
 const Card = () => {
   return (
@@ -29,6 +30,8 @@ const Card = () => {
       </div>
 
       <div className="p-4">
+      
+        <div className="flex justify-between items-center mt-0">
         <div className="flex items-center mb-2">
           <Rating
             initialRating={4} 
@@ -37,9 +40,27 @@ const Card = () => {
             readonly
           />
         </div>
-
+          <span className="text-sm font-medium text-green-500">Flat 15% Off</span>
+         
+        </div>
         <h3 className="text-lg font-bold">Loaded Fries At Aloo Cart</h3>
-
+        <div className="text-gray-500 text-sm flex items-center gap-1 mt-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-5 h-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M16.704 9.704a7 7 0 11-9.408 0 3.5 3.5 0 114.704 0 3.5 3.5 0 114.704 0z"
+            />
+          </svg>
+          <p>Pakistan, Lahore</p>
+        </div>
         <div className="text-gray-500 text-sm flex items-center gap-1 mt-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,22 +80,36 @@ const Card = () => {
           <span className="ml-2 text-blue-500">+2 more</span>
         </div>
 
-        <div className="flex justify-between items-center mt-4">
-          <span className="text-sm font-medium text-green-500">Flat 15% Off</span>
-          <button className="bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-600">
-            Get Offer
-          </button>
-        </div>
+       
       </div>
 
       <div className="flex items-center px-4 py-3 border-t">
+        
+      </div>
+
+      <div className="flex justify-between items-center mt-0 p-4">
+        <div className="flex justify-between items-center ">
         <img
           src="https://via.placeholder.com/40"
           alt="Aloo Cart"
           className="w-10 h-10 rounded-full mr-3"
         />
-        <span className="font-medium text-sm">Aloo Cart</span>
-      </div>
+        <span className="font-medium text-sm">William</span>
+        </div>
+        <CustomButton 
+        text = "Get offer"
+        bgColor = "bg-[#013D29]"
+        textColor = "text-white"
+        borderColor = "#013D29"
+        textSize = "text-sm"
+        padding = "px-4 py-2"
+        borderRadius = "rounded-full"
+        onClick={""} 
+      />
+          {/* <button className="bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-600">
+            Get Offer
+          </button> */}
+        </div>
     </div>
   );
 };
