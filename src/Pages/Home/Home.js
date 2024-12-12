@@ -1,11 +1,14 @@
 import Deals from "../../components/Home/Deals";
 import Footer from "../../components/Home/Footer";
 import MiddleSection from "../../components/Home/MiddleSection";
+import NearbyDeals from "../../components/Home/NearbyDeals";
+
 
 const Home = () => {
   return (
     <>
-    <Deals/>
+       <NearbyDeals/>
+      <Deals/>
       <MiddleSection />
       <Footer />
 

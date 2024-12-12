@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import Rating from "react-rating";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
-import CustomButton from "./Button";
+import CustomButton from "../../Customize/Button";
 
 const Card = () => {
 
@@ -20,13 +20,12 @@ const Card = () => {
     <div className="p-14">
     <div className="p-14">
     <h1 className="text-6xl not-italic font-bold ">
-  Deals of 
+ Nearby
   <span className="text-Deals text-green-400 mx-2">
-    The Day
+    Deals
   </span>
 </h1>
-
-      
+     
     </div>
 
               <div className="flex ">

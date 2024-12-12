@@ -8,10 +8,7 @@ const Deals = () => {
   return (
     <>
       <div className="bg-yellow-50 py-12 border-t">
-         
           <Card />
-
-
       </div>
     </>
   );
